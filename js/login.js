@@ -9,11 +9,11 @@ document.getElementById("btn-submit").addEventListener('click', function(){
   const password = passwordFelid.value;
 // Verify Email Password
 //DANGER: কখনই উচিৎ না এই ভাবে ক্লায়েন্ট সাইড এ করা। 
-if(email === "sontan@bap.com" && password === 'secret'){
-    console.log("valid user");
+if(email === "shourav@gamil.com" && password === '000000'){
+    window.location.href = "bank.html";
 }
 else{
-    console.log("invalid user");
+    alert("You typed invalid user and password")
 }
 })
 
