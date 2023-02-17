@@ -11,7 +11,18 @@ document.getElementById("btn-deposit").addEventListener('click', function(){
   const currentDepositTotal = previousTotal + newDepositAmount;
   primaryDeposit.innerText = currentDepositTotal;
 
-  // Get balance Current Total
+  // step: 4 Get balance Current Total
+  const balanceTotalElement = document.getElementById("balance-total");
+  const previousBalanceTotalString = balanceTotalElement.innerText;
+  const previousBalanceTotal = parseFloat(previousBalanceTotalString);
+
+
+  // step: 5 Calculate current total balance
+  const currentBalanceTotal = previousBalanceTotal + newDepositAmount;
+  balanceTotalElement.innerText = currentBalanceTotal;
+
+
+
   // clear the deposit field 
   depositField.value = "";
 });
