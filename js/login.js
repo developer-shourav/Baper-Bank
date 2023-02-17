@@ -5,7 +5,10 @@ document.getElementById("btn-submit").addEventListener('click', function(){
  // Step-2: Get the email input field value
   const emailFelid = document.getElementById("user-email");
   const email = emailFelid.value;
-  console.log(email);
+  const passwordFelid = document.getElementById("user-password");
+  const password = passwordFelid.value;
+  console.log(email, password);
+
 
 })
 
