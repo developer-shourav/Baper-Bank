@@ -7,8 +7,13 @@ document.getElementById("btn-submit").addEventListener('click', function(){
   const email = emailFelid.value;
   const passwordFelid = document.getElementById("user-password");
   const password = passwordFelid.value;
-  console.log(email, password);
-
-
+// Verify Email Password
+//DANGER: কখনই উচিৎ না এই ভাবে ক্লায়েন্ট সাইড এ করা। 
+if(email === "sontan@bap.com" && password === 'secret'){
+    console.log("valid user");
+}
+else{
+    console.log("invalid user");
+}
 })
 
